@@ -1,0 +1,402 @@
+{
+  "extName": {
+    "message": "Chess Clock Voice",
+    "description": "Extension name shown in Chrome."
+  },
+  "extShortName": {
+    "message": "Clock Voice"
+  },
+  "extDescription": {
+    "message": "Speaks the seconds remaining on your chess.com clock so you never lose on time."
+  },
+  "featureClockVoiceName": {
+    "message": "Clock voice"
+  },
+  "categoryBullet": {
+    "message": "Bullet"
+  },
+  "categoryBlitz": {
+    "message": "Blitz"
+  },
+  "categoryRapid": {
+    "message": "Rapid"
+  },
+  "categoryDaily": {
+    "message": "Daily"
+  },
+  "sectionQuick": {
+    "message": "Quick controls"
+  },
+  "sectionMaster": {
+    "message": "Master switch"
+  },
+  "sectionMasterDesc": {
+    "message": "Pause every announcement without losing your settings."
+  },
+  "masterToggleLabel": {
+    "message": "Announcements enabled"
+  },
+  "masterToggleHelp": {
+    "message": "Turn off to silence the extension instantly."
+  },
+  "statusOn": {
+    "message": "Listening"
+  },
+  "statusOff": {
+    "message": "Off"
+  },
+  "popupSubtitle": {
+    "message": "Low-time announcements"
+  },
+  "clockScopeLabel": {
+    "message": "Which clock"
+  },
+  "clockScopeHelp": {
+    "message": "Opponent announcements require their clock to be running."
+  },
+  "scopeMine": {
+    "message": "My clock only"
+  },
+  "scopeOpponent": {
+    "message": "Opponent's clock"
+  },
+  "scopeBoth": {
+    "message": "Both clocks"
+  },
+  "testVoice": {
+    "message": "Test voice"
+  },
+  "openSettings": {
+    "message": "Open settings"
+  },
+  "sectionBehavior": {
+    "message": "Clock behavior"
+  },
+  "sectionBehaviorDesc": {
+    "message": "Control which clocks speak and how increment is handled."
+  },
+  "incrementAwareLabel": {
+    "message": "Increment-aware thresholds"
+  },
+  "incrementAwareHelp": {
+    "message": "Subtract the increment from the threshold (never below 5 seconds) because you are about to get time back."
+  },
+  "sectionAnnouncement": {
+    "message": "Announcements"
+  },
+  "sectionAnnouncementDesc": {
+    "message": "Choose the words and the rhythm of the countdown."
+  },
+  "phraseLabel": {
+    "message": "Spoken phrase"
+  },
+  "phraseHelp": {
+    "message": "Use tokens to build the phrase. Keep it short so it finishes in about one second."
+  },
+  "phrasePlaceholder": {
+    "message": "{seconds} seconds left"
+  },
+  "cadenceLabel": {
+    "message": "Cadence"
+  },
+  "cadenceHelp": {
+    "message": "Every second is most informative; panic and milestones are less chatty."
+  },
+  "cadenceEvery": {
+    "message": "Every second"
+  },
+  "cadencePanic": {
+    "message": "Panic (1s under 10, 5s above)"
+  },
+  "cadenceMilestones": {
+    "message": "Selected milestones"
+  },
+  "milestonesLabel": {
+    "message": "Milestones (seconds)"
+  },
+  "milestonesHelp": {
+    "message": "Comma-separated values used by the milestones cadence."
+  },
+  "milestonesRange": {
+    "message": "Whole seconds between $MIN$ and $MAX$.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "sectionSpeech": {
+    "message": "Voice"
+  },
+  "sectionSpeechDesc": {
+    "message": "Voices are provided by your browser and operating system."
+  },
+  "voiceLabel": {
+    "message": "Voice & language"
+  },
+  "voiceHelp": {
+    "message": "Pick a specific voice, or let the browser match the language."
+  },
+  "voiceAutomatic": {
+    "message": "Automatic (best match)"
+  },
+  "voiceUnavailable": {
+    "message": "No speech voices were found. Install a system voice or check your browser's speech settings. Announcements will use the default voice."
+  },
+  "languageLabel": {
+    "message": "Language"
+  },
+  "rateLabel": {
+    "message": "Rate"
+  },
+  "pitchLabel": {
+    "message": "Pitch"
+  },
+  "volumeLabel": {
+    "message": "Volume"
+  },
+  "enabledLabel": {
+    "message": "Enabled for this time control"
+  },
+  "thresholdLabel": {
+    "message": "Start announcing at"
+  },
+  "thresholdHelp": {
+    "message": "Announces each whole second at or below this time."
+  },
+  "unitSeconds": {
+    "message": "sec"
+  },
+  "tcHelpBullet": {
+    "message": "Bullet defaults to 50 seconds and can never exceed 60."
+  },
+  "tcHelpBlitz": {
+    "message": "Blitz defaults to 20 seconds and can never exceed 300."
+  },
+  "tcHelpRapid": {
+    "message": "Rapid defaults to 20 seconds and can never exceed 900."
+  },
+  "tcHelpDaily": {
+    "message": "Daily clocks barely tick; off by default."
+  },
+  "sectionPresets": {
+    "message": "Use-case presets"
+  },
+  "sectionPresetsDesc": {
+    "message": "One click fills the phrase, cadence, milestones, and rate. Save your own from the current settings."
+  },
+  "presetGalleryTitle": {
+    "message": "Pick a style"
+  },
+  "presetNumbersName": {
+    "message": "Numbers only"
+  },
+  "presetNumbersDesc": {
+    "message": "Just the number: 20, 19, 18."
+  },
+  "presetSecondsName": {
+    "message": "Seconds left"
+  },
+  "presetSecondsDesc": {
+    "message": "A full sentence: 20 seconds left."
+  },
+  "presetPanicName": {
+    "message": "Panic mode"
+  },
+  "presetPanicDesc": {
+    "message": "Every second under 10, every 5 seconds above."
+  },
+  "presetMinimalName": {
+    "message": "Minimal"
+  },
+  "presetMinimalDesc": {
+    "message": "Only 10, 5, 3, 2, and 1."
+  },
+  "presetCoachName": {
+    "message": "Coach voice"
+  },
+  "presetCoachDesc": {
+    "message": "A calmer, slower 20 seconds left."
+  },
+  "presetApply": {
+    "message": "Apply"
+  },
+  "presetApplied": {
+    "message": "Preset applied. Save changes to keep it."
+  },
+  "deletePreset": {
+    "message": "Delete"
+  },
+  "builtInPreset": {
+    "message": "Built-in"
+  },
+  "customPreset": {
+    "message": "Custom"
+  },
+  "saveCurrentPreset": {
+    "message": "Save the current phrase as a preset"
+  },
+  "saveCurrentPresetHelp": {
+    "message": "Captures the phrase, cadence, milestones, and rate."
+  },
+  "presetNamePlaceholder": {
+    "message": "e.g. Fast blitz warning"
+  },
+  "presetNameRequired": {
+    "message": "Enter a name for the preset."
+  },
+  "savePreset": {
+    "message": "Save preset"
+  },
+  "presetSaved": {
+    "message": "Preset saved."
+  },
+  "sectionAbout": {
+    "message": "About"
+  },
+  "aboutFairPlayTitle": {
+    "message": "Fair play first"
+  },
+  "aboutFairPlayBody": {
+    "message": "This extension only reads the clock text on chess.com and speaks the time. It never reads the board, suggests moves, or touches the game."
+  },
+  "aboutPrivacyTitle": {
+    "message": "Privacy"
+  },
+  "aboutPrivacyBody": {
+    "message": "Settings stay in chrome.storage.sync. No analytics, no remote code, no accounts, and no data leaves your browser."
+  },
+  "resetDefaults": {
+    "message": "Reset all settings"
+  },
+  "resetConfirm": {
+    "message": "Reset every setting to its default value?"
+  },
+  "resetDone": {
+    "message": "Settings reset to defaults."
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "settingsSaved": {
+    "message": "Settings saved."
+  },
+  "unsavedChanges": {
+    "message": "Unsaved changes"
+  },
+  "saveChanges": {
+    "message": "Save changes"
+  },
+  "saving": {
+    "message": "Saving..."
+  },
+  "saveFailed": {
+    "message": "Could not save settings."
+  },
+  "loadFailed": {
+    "message": "Could not load settings: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "validationErrors": {
+    "message": "$COUNT$ setting(s) need attention.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "noDataBadge": {
+    "message": "No data collection"
+  },
+  "ready": {
+    "message": "Ready"
+  },
+  "enableMasterHint": {
+    "message": "Turn on the master switch above to hear clock announcements."
+  },
+  "optionsTitle": {
+    "message": "Chess Clock Voice settings"
+  },
+  "optionsSubtitle": {
+    "message": "Choose when the clock speaks, what it says, and how it sounds. Settings sync through chrome.storage.sync."
+  },
+  "optionsFooterNote": {
+    "message": "Reads only the clock. No board access, no move suggestions, no analytics."
+  },
+  "versionLabel": {
+    "message": "Version"
+  },
+  "testVoiceUnavailable": {
+    "message": "Speech synthesis is not available in this browser."
+  },
+  "charCount": {
+    "message": "$COUNT$ / $MAX$ characters",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "durationEstimate": {
+    "message": "~$SECONDS$s spoken",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "tokensLabel": {
+    "message": "Tokens"
+  },
+  "errorThresholdRange": {
+    "message": "Use a whole number between $MIN$ and $MAX$ seconds.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "errorRateRange": {
+    "message": "Rate must be between 0.5 and 2."
+  },
+  "errorPitchRange": {
+    "message": "Pitch must be between 0 and 2."
+  },
+  "errorVolumeRange": {
+    "message": "Volume must be between 0 and 1."
+  },
+  "errorPhraseEmpty": {
+    "message": "Enter a phrase to speak."
+  },
+  "errorPhraseLength": {
+    "message": "Phrase is too long. Keep it to 40 characters or fewer."
+  },
+  "errorPhraseToken": {
+    "message": "Unknown token. Available tokens: {seconds}, {increment}, {timeControl}."
+  },
+  "errorPhraseDuration": {
+    "message": "This phrase is too long to speak in about one second. Shorten it."
+  },
+  "errorMilestones": {
+    "message": "Enter comma-separated whole seconds, for example 10, 5, 3, 2, 1."
+  },
+  "errorPresetName": {
+    "message": "Preset name is required."
+  },
+  "errorPresetPhrase": {
+    "message": "Preset phrase is not valid."
+  }
+}

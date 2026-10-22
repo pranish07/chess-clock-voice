@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Chess Clock Voice — Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f5f8f6;
+        --panel: #ffffff;
+        --ink: #12231a;
+        --muted: #5b6c62;
+        --line: #d9e4dc;
+        --brand: #16a34a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0c1410;
+          --panel: #141f19;
+          --ink: #ecf5ef;
+          --muted: #97aa9f;
+          --line: #2a3d33;
+          --brand: #22c55e;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(900px 380px at 15% -10%, rgb(34 197 94 / 0.12), transparent 65%),
+          var(--bg);
+        color: var(--ink);
+        font:
+          16px/1.65 ui-sans-serif,
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 32px;
+        box-shadow: 0 10px 30px -18px rgb(0 0 0 / 0.35);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+      .mark {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #16a34a, #065f46);
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 22px;
+      }
+      h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 28px 0 8px;
+      }
+      p,
+      li {
+        color: var(--ink);
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      li {
+        margin: 0.35rem 0;
+      }
+      a {
+        color: var(--brand);
+      }
+      .pill {
+        display: inline-block;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 3px 10px;
+        font-size: 0.75rem;
+        color: var(--muted);
+        margin-right: 6px;
+      }
+      .note {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px 16px;
+        background: color-mix(in srgb, var(--brand) 7%, transparent);
+      }
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="brand">
+          <div class="mark" aria-hidden="true">◷</div>
+          <div>
+            <h1>Chess Clock Voice</h1>
+            <p class="muted" style="margin: 2px 0 0">Privacy policy</p>
+          </div>
+        </div>
+        <p class="muted">Last updated: October 22, 2026</p>
+
+        <div class="note">
+          <strong>Short version:</strong> Chess Clock Voice does not collect, transmit, sell, or
+          share any data. It reads the clock text on chess.com, speaks the remaining time locally,
+          and stores your settings in Chrome sync storage.
+        </div>
+
+        <h2>1. What the extension does</h2>
+        <p>
+          Chess Clock Voice is a Chrome extension that speaks the remaining seconds on a chess.com
+          clock when time gets low. It is a clock-only accessibility and time-management tool. It
+          does not read the board, evaluate positions, suggest moves, or interact with chess.com's
+          game logic.
+        </p>
+
+        <h2>2. Data we collect</h2>
+        <p><strong>None.</strong> We do not collect, use, or transfer:</p>
+        <ul>
+          <li>personal information, names, email addresses, or account identifiers;</li>
+          <li>chess.com account data, game history, results, ratings, or opponents;</li>
+          <li>board positions, moves, chat, messages, or any game content;</li>
+          <li>health, financial, authentication, location, or web-history data;</li>
+          <li>analytics, telemetry, crash reports, or advertising identifiers.</li>
+        </ul>
+        <p>
+          The extension has no server, no user accounts, no analytics SDK, and no remote code. No
+          data leaves your browser.
+        </p>
+
+        <h2>3. What the extension reads on chess.com</h2>
+        <p>
+          On chess.com live game pages, the content script reads only the clock text (for example
+          <code>0:09.3</code> or <code>3:00</code>), which clock is currently running, the
+          time-control label (for example <code>3|2</code>), and an orientation attribute used to
+          keep clock-side handling explicit. This information is processed in memory to decide what
+          to speak. It is never stored, transmitted, or logged to a remote service.
+        </p>
+
+        <h2>4. Settings storage</h2>
+        <p>
+          Your preferences (thresholds, toggles, voice settings, phrase, and custom presets) are
+          stored using <code>chrome.storage.sync</code>. This keeps them available to the extension
+          and, if you have Chrome Sync enabled, lets Chrome sync them across your signed-in
+          browsers. That sync is a Chrome platform feature; the developer has no access to it.
+          Settings contain no game data or personal information.
+        </p>
+
+        <h2>5. Speech synthesis</h2>
+        <p>
+          Announcements use the browser and operating system's built-in speech synthesis. The spoken
+          text is generated locally. The extension does not send audio or text to a cloud speech
+          service.
+        </p>
+
+        <h2>6. Permissions</h2>
+        <p>
+          <span class="pill">storage</span> saves your settings and presets.<br />
+          <span class="pill">https://*.chess.com/*</span> lets the declared content script read the
+          clock on chess.com game pages. No other hosts are used.
+        </p>
+
+        <h2>7. Third parties and sharing</h2>
+        <p>
+          We do not sell, rent, transfer, or disclose data to third parties. There are no
+          advertising, analytics, or tracking partners. The extension is distributed through the
+          Chrome Web Store, which is operated by Google and governed by Google's own policies.
+        </p>
+
+        <h2>8. Children</h2>
+        <p>
+          The extension is not directed at children under 13 and collects no data from anyone,
+          including children.
+        </p>
+
+        <h2>9. Fair play</h2>
+        <p>
+          The extension is not a chess engine, does not analyze positions, and does not provide move
+          suggestions. It only speaks clock time. Users are responsible for following chess.com's
+          terms and fair-play rules.
+        </p>
+
+        <h2>10. Changes</h2>
+        <p>
+          If this policy changes, the updated version will be published at this URL with a new "last
+          updated" date. Material changes will be reflected in the extension's store listing.
+        </p>
+
+        <h2>11. Contact</h2>
+        <p>
+          For privacy questions, use the developer support contact shown on the Chess Clock Voice
+          Chrome Web Store listing.
+        </p>
+
+        <footer>
+          Chess Clock Voice is an independent extension and is not affiliated with chess.com.
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

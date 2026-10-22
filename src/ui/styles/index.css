@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 245 248 246;
+  --elevated: 255 255 255;
+  --ink: 18 35 26;
+  --muted: 91 108 98;
+  --line: 217 228 220;
+  --brand: 22 163 74;
+  --brand-ink: 255 255 255;
+  --danger: 220 38 38;
+  --success: 21 128 61;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: 12 20 16;
+    --elevated: 20 31 25;
+    --ink: 236 245 239;
+    --muted: 151 170 159;
+    --line: 42 61 51;
+    --brand: 34 197 94;
+    --brand-ink: 8 24 15;
+    --danger: 248 113 113;
+    --success: 74 222 128;
+  }
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-surface text-ink antialiased;
+    background-image:
+      radial-gradient(900px 380px at 15% -10%, rgb(var(--brand) / 0.12), transparent 65%),
+      radial-gradient(700px 300px at 100% 0%, rgb(var(--brand) / 0.06), transparent 60%);
+  }
+
+  select,
+  input,
+  button {
+    font: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--brand) / 0.65);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .ccv-card {
+    @apply rounded-2xl border border-line bg-elevated/90 shadow-card backdrop-blur;
+  }
+
+  .ccv-label {
+    @apply text-sm font-semibold text-ink;
+  }
+
+  .ccv-help {
+    @apply text-xs leading-relaxed text-muted;
+  }
+
+  .ccv-input {
+    @apply w-full rounded-xl border border-line bg-surface px-3 py-2 text-sm text-ink placeholder:text-muted/70;
+  }
+
+  .ccv-input:focus {
+    @apply border-brand outline-none ring-2 ring-brand/25;
+  }
+
+  .ccv-chip {
+    @apply inline-flex items-center rounded-full border border-line bg-surface px-2.5 py-1 text-[11px] font-medium text-muted;
+  }
+
+  .ccv-range {
+    @apply h-1.5 w-full cursor-pointer appearance-none rounded-full bg-line accent-brand;
+  }
+
+  .ccv-range::-webkit-slider-thumb {
+    @apply h-4 w-4 appearance-none rounded-full border-2 border-elevated bg-brand shadow;
+  }
+}
+
+@keyframes ccv-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ccv-live-dot {
+  animation: ccv-pulse 2.4s ease-in-out infinite;
+}
